@@ -9,11 +9,12 @@ namespace MultipleStuff
     {
         public double GetMinMax1(out List<double> list)
         {
+            list=(9,2);
             return(list.Min(),list.Max());
         }
-        struct SuperList
+        struct list
         {
-            public GetMinMax2(List<double> list)
+            public double GetMinMax2(List<double> list)
             {
                 return(list.Min(),list.Max());
             }
