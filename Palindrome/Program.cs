@@ -4,13 +4,16 @@ namespace Palindrome
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            
+            foreach (string arg in args)
+            {
+                Console.WriteLine($"{arg}->{Palindrome(arg)}");
+            }
         }
 
 
-        private bool Palindrome(string s)
+        private static bool Palindrome(string s)
         {
             bool IsString(string s)
             {
